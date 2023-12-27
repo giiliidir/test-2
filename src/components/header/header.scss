@@ -1,0 +1,24 @@
+.header {
+  background: rgba(140, 225, 160, 0.25);
+  margin-bottom: vc(120);
+  .row {
+	display: grid;
+	grid-template-columns: vc(68) 1fr;
+	grid-gap: vc(330);
+	align-items: center;
+  }
+  &__logo {
+
+	& svg {
+	  width: vc(68);
+	  height: vc(42);
+	  fill: black;
+	}
+
+	& p {
+	  width: vc(68);
+	  font-size: vc(12);
+	}
+
+  }
+}

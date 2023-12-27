@@ -12,7 +12,7 @@ export default {
 	entry,
 	output,
 	watchOptions: {
-		// aggregateTimeout: 300, // Delay the first rebuild (in ms)
+		aggregateTimeout: 1500, // Delay the first rebuild (in ms)
 		// poll: 1000, // Poll using interval (in ms or a boolean)
 		ignored: /node_modules/, // Ignore to decrease CPU usage
 	},

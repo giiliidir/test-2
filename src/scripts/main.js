@@ -39,29 +39,15 @@ const resize = () => {
 	resizeWidth = innerWidth;
 };
 
-// добавить скрипты для инициализации при переходах
-const scriptsInit = [
-	// активируем нужные модули которые будут использоваться и которые должны обновлять при переходах между страницами
-	lazyLoad.init,
-	scrollToAnchor.init,
-	lazyBlur.init,
-	sharing.init,
-
-	home.init,
-	article.init,
-];
-
-// добавить скрипты для удаленния данных при уходе
-const scriptsDestroy = [
-
-];
-
 const init = () => {
 	uaParser.init();
 	actualYear.init();
 	vhFix.init();
-	// закоментировать или удалить если SPA поведение не требуется
-	router.init(scriptsInit, scriptsDestroy);
+	lazyLoad.init();
+	scrollToAnchor.init();
+	lazyBlur.init();
+	sharing.init();
+	home.init();
 
 	resizeWidth = innerWidth;
 	window.addEventListener('resize', _debounce(resize, 500));

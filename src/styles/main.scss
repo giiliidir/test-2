@@ -10,9 +10,17 @@
 @import 'fonts';
 @import 'base';
 @import 'helpers';
+@import 'button';
 
 @import '@components/header/header';
 @import '@components/footer/footer';
 @import '@components/lazyBlur/lazyBlur';
+@import '@components/navbar/navbar';
+@import '@components/headerBottom/headerBottom';
+@import '@components/info/info';
+@import '@components/task/task';
+@import '@components/project/project';
+@import '@components/data/data';
+
 
 @import '@pages/home/home';

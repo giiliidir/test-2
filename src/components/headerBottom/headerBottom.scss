@@ -1,0 +1,118 @@
+.headerBottom {
+	display: grid;
+	grid-template-columns: 1fr vc(770);
+  	grid-template-rows: vc(829);
+
+  &__img {
+	position: relative;
+	background-color: rgba(232, 112, 234, 0.07);
+	& img {
+	  height: vc(829);
+	}
+
+	&-box {
+	  display: grid;
+	  grid-template-columns: max-content max-content;
+	  position: absolute;
+	  justify-content: center;
+	  align-content: center;
+	  grid-gap: vc(8);
+	  left: 0;
+	  bottom: 0;
+	  background-color: aqua;
+	  width: vc(222);
+	  height: vc(71);
+	  transition: all .3s;
+	  &:hover {
+		transform: translateY(vc(-3));
+		border-radius: vc(5);
+		box-shadow: 0 2px 1px 3px rgba(63, 24, 24, 0.15);
+
+		&:active {
+		  transform: translateY(vc(2));
+		}
+	  }
+
+	  & p {
+		font-size: vc(12);
+		letter-spacing: vc(2.4);
+		text-transform: uppercase;
+		font-weight: 400;
+
+	  }
+	  &-svg {
+		width: vc(17);
+		fill: rgba(0, 0, 0, 0.45);
+	  }
+	}
+
+  }
+
+  &__box {
+	grid-row: 1 / -1;
+	grid-column: 1 / 2;
+	display: grid;
+	grid-row: repeat(max-content);
+	padding-top: vc(336);
+	&-title {
+
+	  //&-text1 {
+	  //
+	  //}
+	  &-text2 {
+		font-size: vc(64);
+		font-weight: 700;
+		line-height: vc(64);
+		color: #333;
+	  }
+
+	}
+	&-bottom {
+	  display: grid;
+	  grid-template-columns: max-content max-content;
+	  grid-template-rows: max-content;
+	  grid-gap: vc(22);
+	  &-left {
+		padding: vc(18);
+		transition: all .2s;
+		&:hover {
+		  scale: 1.2;
+		}
+		& svg {
+		  width: vc(17);
+		  height: vc(17);
+		}
+	  }
+
+	  &-right {
+		padding: vc(18);
+		transition: all .2s;
+
+		&:hover {
+		  scale: 1.2;
+		}
+		& svg {
+		  width: vc(17);
+		  height: vc(17);
+		}
+
+	  }
+	}
+
+	&-namber {
+	  display: grid;
+	  grid-template-columns: repeat(3, max-content);
+	  font-size: vc(24);
+	  font-weight: 400;
+	  color: #BDBDBD;
+	  grid-gap: vc(28);
+	  & svg {
+		width: vc(26);
+		height: vc(25);
+		fill: #BDBDBD;
+	  }
+	}
+  }
+
+
+}

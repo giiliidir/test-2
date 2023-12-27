@@ -1,2 +1,9 @@
+
 header.header
-	h2 header
+	.container
+		.row
+			a.header__logo
+				+svg('logo')
+				p dijital project
+			include @components/navbar/navbar
+		include @components/headerBottom/headerBottom

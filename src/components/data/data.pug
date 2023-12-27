@@ -1,0 +1,33 @@
+section.data
+	.container
+		.dataBox
+			h2.dataBox__title Связаться с нами
+
+			.dataBox__forms.forms
+				.forms__inputBox
+					input(type='text' required='required')
+					span Имя
+				.forms__inputBox
+					input(type='text' required='required')
+					span Номер телефона
+				.forms__inputBox
+					input(type='text' required='required')
+					span E-mail
+				.forms__inputBox
+					input(type='text' required='required')
+					span Интересующий товар/услуга
+				.forms__inputBox.sms
+					input(type='text' required='required')
+					span Сообщение
+
+			.dataBox__imgbox
+				img.dataBox__imgbox-img(src='' alt='sranii dom')
+			.dataBox__text
+				p.dataBox__text-text.
+					Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+			.dataBox__box
+				a.dataBox__box-box
+					button
+						p ОТПРАВИТЬ
+					.dataBox__box-box-svg
+						+svg('arrow-right')
